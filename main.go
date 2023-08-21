@@ -22,7 +22,7 @@ func main() {
 func run() {
 	processStartTime := time.Now()
 
-	s := spinner.New(spinner.CharSets[26], 150*time.Millisecond) // Build our new spinner
+	s := spinner.New(spinner.CharSets[35], 150*time.Millisecond) // Build our new spinner
 	s.Start()
 
 	var totalDuration float64
