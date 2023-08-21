@@ -24,7 +24,7 @@ func emptyDuration(duration types.Duration) bool {
 		return false
 	}
 
-	if duration.Hours > 0 {
+	if duration.Seconds > 0 {
 		return false
 	}
 
@@ -50,7 +50,8 @@ func printDuration(duration types.Duration) {
 	fmt.Print("  ")
 
 	if isEmpty {
-		infoStyle.Print(" 0 seconds")
+		infoStyle.Print(" 0 seconds ")
+		return
 	}
 
 	if duration.Hours > 0 {

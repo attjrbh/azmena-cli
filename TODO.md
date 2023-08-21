@@ -5,4 +5,4 @@
 - #### add spinner ✅
 - ####  add process duration ✅
 - #### add 0 when duration is 0 ✅
-- #### add a demo GIF
+- #### add a demo GIF ✅
