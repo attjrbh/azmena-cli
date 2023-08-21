@@ -15,7 +15,24 @@ func PrintInfo(info types.DurationInfo) {
 	printDuration(splitDuration)
 }
 
+func emptyDuration(duration types.Duration) bool {
+	if duration.Hours > 0 {
+		return false
+	}
+
+	if duration.Minutes > 0 {
+		return false
+	}
+
+	if duration.Hours > 0 {
+		return false
+	}
+
+	return true
+}
+
 func printDuration(duration types.Duration) {
+	isEmpty := emptyDuration(duration)
 	fmt.Println()
 	fmt.Println()
 	title := ` TOTAL DURATION `
@@ -26,6 +43,15 @@ func printDuration(duration types.Duration) {
 	redBackground.Add(color.FgWhite)
 
 	redBackground.Print(title)
+
+	infoStyle := color.New()
+	infoStyle.Add(color.BgBlack)
+	infoStyle.Add(color.FgHiWhite)
+	fmt.Print("  ")
+
+	if isEmpty {
+		infoStyle.Print(" 0 seconds")
+	}
 
 	if duration.Hours > 0 {
 		result += fmt.Sprintf("%d Hour", duration.Hours)
@@ -54,10 +80,6 @@ func printDuration(duration types.Duration) {
 		}
 	}
 
-	infoStyle := color.New()
-	infoStyle.Add(color.BgBlack)
-	infoStyle.Add(color.FgHiWhite)
-	fmt.Print("  ")
 	infoStyle.Printf(" %s ", result)
 
 }
@@ -77,7 +99,7 @@ func printCalculatedFilesInfo(count int) {
 	fmt.Print(" ")
 	result := fmt.Sprintf(" %d file", count)
 
-	if count > 1 {
+	if count != 1 {
 		result += "s"
 	}
 	result += " "

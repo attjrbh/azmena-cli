@@ -6,10 +6,6 @@ import (
 )
 
 func splitDuration(d float64) types.Duration {
-	// we first round the seconds to the nearest integer
-	// for example: 1.1 => 1, and 2.5 => 3
-	// days := seconds / (60 * 60 * 24)
-	// seconds -= days * (60 * 60 * 24)
 	seconds := int(math.Round(d))
 	hours := seconds / (60 * 60)
 	seconds -= hours * (60 * 60)

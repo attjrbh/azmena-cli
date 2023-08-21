@@ -4,7 +4,6 @@ type Duration struct {
 	Seconds int
 	Minutes int
 	Hours   int
-	// Days    int
 }
 
 type DurationInfo struct {
