@@ -6,5 +6,6 @@ Azmena is a CLI app to calculate video files total duration in a folder and it's
 
 ##### Disclaimer: The Azemna CLI tool uses [ffmpeg](https://ffmpeg.org/) under the hood, so make sure you have ffmpeg installed and added to PATH on your system.
 
-Azmena is a CLI tool is part of the Suyfuh Initiative open source toolkit
-Visi the initiative's home page [here](https://facebook.com/suyfuh)
+Azmena CLI is part of the Suyfuh Initiative Open Source Toolkit.
+
+Visit the initiative's home page on Facebook [here](https://facebook.com/suyfuh)
