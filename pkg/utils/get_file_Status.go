@@ -1,8 +1,9 @@
 package utils
 
 import (
-	"go-ffprope/pkg/types"
 	"sync"
+
+	"github.com/mdyssr/azmena/pkg/types"
 )
 
 func GetFileStatus(path string, wg *sync.WaitGroup, ch chan types.FileStatus) {

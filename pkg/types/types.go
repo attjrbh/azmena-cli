@@ -17,3 +17,9 @@ type FileStatus struct {
 	Path     string
 	Duration float64
 }
+
+type RunOptions struct {
+	IsFlat     bool
+	Extensions []string
+	IsMinimal  bool
+}

@@ -2,8 +2,9 @@ package utils
 
 import (
 	"fmt"
+
 	"github.com/fatih/color"
-	"go-ffprope/pkg/types"
+	"github.com/mdyssr/azmena/pkg/types"
 )
 
 func PrintInfo(info types.DurationInfo) {

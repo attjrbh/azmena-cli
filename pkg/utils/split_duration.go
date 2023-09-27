@@ -1,8 +1,9 @@
 package utils
 
 import (
-	"go-ffprope/pkg/types"
 	"math"
+
+	"github.com/mdyssr/azmena/pkg/types"
 )
 
 func splitDuration(d float64) types.Duration {

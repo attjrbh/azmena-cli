@@ -1,3 +1,6 @@
-build/
-backups/
-Makefile
+media
+build
+*.mp4
+*.mkv
+*.webm
+*.avi
